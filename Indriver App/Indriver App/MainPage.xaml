@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Indriver_App.MainPage">
+
+    <StackLayout BackgroundColor="White">
+
+        <Frame Padding="24" CornerRadius="0" BackgroundColor="Green">
+            <Label Text="Indrive App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Image Source="indriver.png" 
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="10"/>
+
+
+        <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple" 
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"
+                        Command="{Binding LoginCommand}" IsEnabled="{Binding Disable}"/>
+
+
+        <Button Text="registrer" HorizontalOptions="Center" BackgroundColor="DarkOrange"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"
+                        Command="{Binding RegisterCommand}"/>
+        
+       
+
+
+
+    </StackLayout>
+    
+
+</ContentPage>
