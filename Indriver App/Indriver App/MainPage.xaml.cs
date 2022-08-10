@@ -13,24 +13,20 @@ namespace Indriver_App
         public MainPage()
         {
             InitializeComponent();
+
+        }
+        private void Button_Clicked(object sender,EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+
         }
     }
 
-    protected async override void OnAppearing()
-    {
-        base.OnAppearing();
 
-        //  await Task.Delay(6000);
 
-        //            await Navigation.PushAsync(new LoginPage());
-    }
-
-    private async void LoginButton_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new LoginPage());
-    }
+    
 }
 
 
-}
+
 

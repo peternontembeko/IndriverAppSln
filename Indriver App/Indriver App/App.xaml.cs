@@ -10,7 +10,7 @@ namespace Indriver_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Indriver());
         }
 
         protected override void OnStart()

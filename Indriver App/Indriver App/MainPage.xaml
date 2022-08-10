@@ -13,17 +13,15 @@
                Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="10"/>
 
 
-        <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple" 
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"
-                        Command="{Binding LoginCommand}" IsEnabled="{Binding Disable}"/>
+        <Button Text="Login" HorizontalOptions="Center" Clicked="Button_Clicked" BackgroundColor="Purple" 
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"/>
 
 
-        <Button Text="registrer" HorizontalOptions="Center" BackgroundColor="DarkOrange"
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"
-                        Command="{Binding RegisterCommand}"/>
-        
+        <Button Text="registrer" HorizontalOptions="Center" Clicked="Button_Clicked" BackgroundColor="DarkOrange"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="50"/>
+
+
        
-
 
 
     </StackLayout>
